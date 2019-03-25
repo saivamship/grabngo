@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'src/app/shared/MenuItem';
 
 @Component({
   selector: 'app-order-landing',
@@ -8,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class OrderLandingComponent implements OnInit {
 
   constructor() { }
-
+  items: MenuItem[];
   ngOnInit() {
+    this.items = [
+      {label: 'Choose Plan'},
+      {label: 'Customize'},
+      {label: 'Customer Details'},
+      {label: 'Review'}
+  ];
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuItem } from './shared/MenuItem'
 import { Router, ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,7 +24,29 @@ export class AppComponent {
 
 
   ngOnInit() {
- 
+    this.items = [
+      {
+        label: 'Home',
+        url:"home"
+
+      },
+      {
+        label: 'Plans',
+        url: "plans"
+
+      },
+      {
+        label: 'Order',
+        url: 'order/landing'
+
+      },
+      {
+        label: 'Contact Us',
+        url: 'about'
+
+      }
+    ];
+
   }
 
 }

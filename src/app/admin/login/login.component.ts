@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuItem } from 'src/app/shared/MenuItem';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,9 @@ export class LoginComponent implements OnInit {
 
   constructor(route: Router) { }
 
+
   ngOnInit() {
+ 
   }
 
   onClick() {

@@ -7,13 +7,16 @@ import { OrderReviewComponent } from './order-review/order-review.component';
 
 const routes: Routes = [
     {
-        path: 'customize', component: OrderCustomizeComponent,
+        path: 'customize', component: OrderCustomizeComponent
     },
     {
-        path: 'plan', component: OrderPlanComponent,
+        path: 'plan', component: OrderPlanComponent
     },
     {
         path: 'review', component: OrderReviewComponent
+    },
+    {
+        path: 'landing', component: OrderLandingComponent
     }
 ];
 
@@ -21,4 +24,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class OrderRoutingModule { }

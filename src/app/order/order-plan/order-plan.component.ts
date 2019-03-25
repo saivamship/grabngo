@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'src/app/shared/MenuItem';
 
 @Component({
   selector: 'app-order-plan',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class OrderPlanComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
+
   }
 
 }

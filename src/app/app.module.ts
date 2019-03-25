@@ -10,7 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { AdminModule } from './admin/admin.module';
 import { OrderModule } from './order/order.module';
-
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { OrderModule } from './order/order.module';
     HttpClientModule,
     AppRoutingModule,
     AdminModule,
-    OrderModule
+    OrderModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
